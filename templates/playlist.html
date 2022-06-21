@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<!-- title webseit -->
+<div >
+  <div class="jumbotron text-center">
+    <h1>Download Video and Audio from YouTube/playlist </h1>
+
+<!-- input url  -->
+    <form  method="post" >
+      <div class="input-group mb-3" style="border: 2px solid #ff7675;">
+        <input  class="form-control" type="text" placeholder="Paste the video link here ..." id="myInput" aria-label="default input example" name="url" autocomplete ="on" >
+
+            <button  class="btn btn-outline-danger" type="submit" onclick="getInputValue();" >Download</button>
+
+      </div>
+    </form>
+
+  </div>
+</div>
+{% endblock %}
